@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "maini"
+version = "0.1.0"
+description = "A Behavioral Budgeting Engine for Linux"
+authors = [
+    {name = "Renan Alves", email = "alvesrenan2007@gmail.com"}
+]
+dependencies = [
+    "click",
+    "requests",
+]
+requires-python = ">=3.11"
+
+[project.scripts]
+maini = "main:main_loop"

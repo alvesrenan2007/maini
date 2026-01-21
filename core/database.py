@@ -1,6 +1,6 @@
 import sqlite3
 
-DB_FILE = "finance.db"
+DB_FILE = "maini.db"
 
 
 def initialize_db():
@@ -23,6 +23,8 @@ with sqlite3.connect(DB_FILE) as conn:
                         value INTEGER,
                         currency TEXT,
                         counterpart TEXT,
-                        tags TEXT
+                        tags TEXT,
+                        value_on_target_currency INTEGER,
+                        is_locked INTEGER
                     )
-                    """)
+    """)
