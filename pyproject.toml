@@ -16,4 +16,7 @@ dependencies = [
 requires-python = ">=3.11"
 
 [project.scripts]
-maini = "main:main_loop"
+maini = "main:initial_routine"
+
+[tool.setuptools.packages.find]
+include = ["core*", "interfaces*"]

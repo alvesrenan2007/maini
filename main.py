@@ -1,5 +1,5 @@
-import sys
-from interfaces.cli import main_loop
+# import sys
+from src.maini.interfaces.cli import initial_routine
 
 if __name__ == "__main__":
-    main_loop()
+    initial_routine()
